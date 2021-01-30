@@ -1,6 +1,6 @@
 body {
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 18px;
     background: rgb(46 34 53);
     color:#fff;
     background-size: cover;
@@ -28,6 +28,10 @@ body {
     float: right;
     width: 100px;
     height: 30px;
+    background-color: #4646ab;
+    border-radius: 30px;
+    border: none;
+    color: white;
 }
 * {
     margin:0;
@@ -61,16 +65,18 @@ body {
     width: 100%;
 }
 .input_message {
+    padding-top: 2px;
     color: white;
     outline: none;
-    width: 175px;
+    width: auto;
     background: none;
-    font-size: 24px;
+    font-size: 20px;
     border: none;
     float: left;
     margin-left: 20px;
 }
 .btn_send {
+    transition: 0.2s;
     outline: none;
     font-size: 17px;
     float: right;
@@ -82,12 +88,13 @@ body {
     background-size: 30px 30px;
 }
 .message_sent {
-    padding-top: 12px;
+    padding-top: 16px;
 }
 .write ul li p{
     margin: 10px 20px;
 }
-background-color: #4646ab;
-border-radius: 30px;
-border: none;
-color: white;
+.btn_send:active {
+    transition: 0.2s;
+    background-size: 20px 20px;
+}
+

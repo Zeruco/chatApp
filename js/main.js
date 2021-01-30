@@ -1,7 +1,7 @@
 let userName = "";
 let signBtn = document.querySelector('.sign_in');
 let inputMessage = document.querySelector('.input_message');
-
+let ul = document.getElementById('messages')
 signBtn.addEventListener('click', () => {
     userName = prompt();
     if (userName) {
@@ -29,7 +29,7 @@ inputMessage.addEventListener('blur', () => {
 function sendMessage() {
     if (!userName) alert('You are not sign up');
     else {
-        let message = document.getElementById("message").value;
+        let message = inputMessage.value;
         if(message){
             firebase.database().ref("messages").push().set({
                 "sender": userName,
@@ -37,7 +37,12 @@ function sendMessage() {
             });
         }
     }
+    ul.scrollIntoView(false);
+    inputMessage.value = "";
     return false;
 }
 
+signBtn.addEventListener('click', () => {
+
+});
 
