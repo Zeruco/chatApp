@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatApp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <div class="header_logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="header_sign-in">
+                <button class="sign_in">Sign in</button>
+            </div>
+        </div>
+    </header>
+    <div class="write">
+        <ul id="messages"></ul>
+    </div>
+    <footer class="footer">
+        <form class="message_sent" onsubmit="return sendMessage();">
+            <input class="input_message" id="message" placeholder="Enter message">
+            <input value="" class="btn_send" type="submit">
+        </form>
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        let firebaseConfig = {
+            apiKey: "AIzaSyBMhL4m8JiC5Kc-dZtytc_ckNhb4yg3Hmw",
+            authDomain: "chatapp-ec0af.firebaseapp.com",
+            projectId: "chatapp-ec0af",
+            storageBucket: "chatapp-ec0af.appspot.com",
+            messagingSenderId: "794559711419",
+            appId: "1:794559711419:web:8a50646bc2feb9e3ab419e",
+            measurementId: "G-57PNQTMQ4V"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

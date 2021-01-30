@@ -1,0 +1,93 @@
+body {
+    border-radius: 20px;
+    font-size: 24px;
+    background: rgb(46 34 53);
+    color:#fff;
+    background-size: cover;
+}
+.header {
+    width: 100%;
+    background-color: rgb(45 28 28);
+    position: fixed;
+    height: 60px;
+    top:0;
+    margin-bottom: 40px;
+}
+.header_logo {
+    padding-top: 10px;
+    float: left;
+    padding-left: 20px;
+}
+.header_sign-in {
+    padding-top: 15px;
+    padding-right: 20px;
+}
+.sign_in {
+    outline: none;
+    color: black;
+    float: right;
+    width: 100px;
+    height: 30px;
+}
+* {
+    margin:0;
+    padding: 0;
+}
+.write ul {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 60px;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.write ul li {
+    clear: both;
+    list-style: none;
+    margin: 20px 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 200px;
+    min-height: 40px;
+    background-color: rgb(45 28 28);
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: rgb(45 28 28);
+    height: 60px;
+    bottom:0;
+    position: fixed;
+    width: 100%;
+}
+.input_message {
+    color: white;
+    outline: none;
+    width: 175px;
+    background: none;
+    font-size: 24px;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.btn_send {
+    outline: none;
+    font-size: 17px;
+    float: right;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: url(../img/send.svg) no-repeat;
+    background-size: 30px 30px;
+}
+.message_sent {
+    padding-top: 12px;
+}
+.write ul li p{
+    margin: 10px 20px;
+}
+background-color: #4646ab;
+border-radius: 30px;
+border: none;
+color: white;
