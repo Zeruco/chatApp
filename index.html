@@ -13,9 +13,14 @@
             <div class="header_logo">
                 <img src="img/logo.png" alt="">
             </div>
+            <div class="header_sign-up">
+                <button class="sign_up">Sign up</button>
+            </div>
+
             <div class="header_sign-in">
                 <button class="sign_in">Sign in</button>
             </div>
+
         </div>
     </header>
     <div class="write">
@@ -27,6 +32,30 @@
             <input value="" class="btn_send" type="submit">
         </form>
     </footer>
+    <!--modal Window-->
+    <div class="registration">
+        <div class="close">
+            <div class="close_btn"></div>
+        </div>
+        <form class="registration_form" onsubmit="return reg();">
+            <input type="text" class="login" placeholder="Login">
+            <input type="text" class="email" placeholder="Email">
+            <input type="text" class="password" placeholder="Password">
+            <input type="text" class="repeat_password" placeholder="Repeat password">
+            <input type="submit" value="Registration" class="registration_btn">
+        </form>
+    </div>
+    <div class="log_in">
+        <div class="close">
+            <div class="close_btn"></div>
+        </div>
+        <form class="log_in-form" onsubmit="return logIn();">
+            <input type="text" class="email_input" placeholder="Email">
+            <input type="text" class="password_input" placeholder="Password">
+            <input type="submit" value="Sign in" class="sign_in-btn">
+        </form>
+    </div>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/chatApp.iml" filepath="$PROJECT_DIR$/.idea/chatApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vue-registration/.idea/vue-registration.iml" filepath="$PROJECT_DIR$/../vue-registration/.idea/vue-registration.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/zd1/.idea/zd1.iml" filepath="$USER_HOME$/Desktop/zd1/.idea/zd1.iml" />
     </modules>
   </component>
 </project>

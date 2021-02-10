@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="vue-registration" />
+    <orderEntry type="module" module-name="zd1" />
   </component>
 </module>
